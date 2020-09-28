@@ -1,0 +1,9 @@
+package ex;
+
+public class Test {
+	int a;
+	int test(int a,int b) {
+		return a+b;
+	}
+	
+}

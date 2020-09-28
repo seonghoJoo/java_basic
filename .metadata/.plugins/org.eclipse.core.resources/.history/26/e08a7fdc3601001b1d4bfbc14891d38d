@@ -1,0 +1,16 @@
+package array;
+
+public class Ex5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String[] movies= {
+				"테넷","엑스맨" , "반지의 제왕","인터스텔라","겨울왕국2"};
+		for(String movie : movies) {
+			System.out.println(movie);
+		}
+		
+	}//main() end
+
+}//Ex5 end

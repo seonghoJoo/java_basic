@@ -1,0 +1,78 @@
+package vo;
+
+/*
+  		vo 생성규칙
+  		1. 멤버 필드들의 접근제한자를 private 으로 선언
+ 		2. 멤버 필드들 접근시 getter setter로 접근
+ 		3. 기본 생성자 꼭 만들어주기
+ */
+public class Member {
+	
+	private String name;	//이름
+	private String code;	//학번
+	private char gender; 	// 성별(M,F)
+	private String major;	// 전공
+	
+	// 생성자란 멤버필드 초기화 할 때 쓴다
+	public Member() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	// 현업에서 생성자로 아예 초기화 하는 방법
+	// 생성자 오버로딩
+	public Member(String name, String code, char gender, String major) {
+		// super은 상속때 배우며 생략가능
+		// 객체는 이곳에서 만들어 진다
+		this.name = name;
+		this.code = code;
+		this.gender = gender;
+		this.major = major;
+	}
+	
+	public Member(String name, String code, char gender) {
+		// super은 상속때 배우며 생략가능
+		this(name,code,gender,"컴퓨터공학과"); // 객체는 this라서 안만들어짐
+		
+	}
+	public Member(String name, char gender) {
+		// super은 상속때 배우며 생략가능
+		this(name,"20학번",gender,"컴퓨터공학과");// 객체는 this라서 안만들어짐
+//		this.name = name;
+//		this.code = "20학번";
+//		this.gender = gender;
+//		this.major = "컴퓨터공학과";
+	}
+	public Member(String name) {
+		// super은 상속때 배우며 생략가능
+		this(name,"20학번",'M',"컴퓨터공학과"); // 객체는 this라서 안만들어짐
+//		this.name = name;
+//		this.code = "20학번";
+//		this.gender = 'M';
+//		this.major = "컴퓨터공학과";
+	}
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getCode() {
+		return code;
+	}
+	public void setCode(String code) {
+		this.code = code;
+	}
+	public char getGender() {
+		return gender;
+	}
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+	public String getMajor() {
+		return major;
+	}
+	public void setMajor(String major) {
+		this.major = major;
+	}
+}

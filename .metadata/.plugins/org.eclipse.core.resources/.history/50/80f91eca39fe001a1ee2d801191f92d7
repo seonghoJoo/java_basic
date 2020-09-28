@@ -1,0 +1,19 @@
+package overloading;
+
+public class Ex1 {
+	public static void main(String[] args) {
+		
+		System.out.println(1);
+		System.out.println("1");
+		System.out.println('1');
+		System.out.println(true);
+		System.out.println(new Ex1()
+				);
+		/*
+		  		오버로딩이란?
+		  		-  이름이 같고 인자가 다른 것
+		  		-  
+		 */
+	}//main() end
+	
+}// Ex1 

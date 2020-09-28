@@ -1,0 +1,21 @@
+package equal;
+
+class A{
+	int a;
+	public A(int a) {
+		this.a = a;
+	}// A(int a) end
+}// A end
+
+public class Ex1 {
+	
+	public static void main(String[] args) {
+	
+		A a = new A(1);
+		A b = new A(1);
+		System.out.println(a.equals(b));
+	
+	}// main() end
+	
+	
+}// Ex1 end

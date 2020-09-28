@@ -1,0 +1,11 @@
+package oop;
+
+public class A {
+	// 접근 제한자가 default이고
+	// 기본자료형이 int형인 인스턴스 멤버필드 a
+	int a;
+	
+	// 접근 제한자가 default이고
+	// 기본자료형이 int형인 static 멤버필드 b
+	static int b;
+}

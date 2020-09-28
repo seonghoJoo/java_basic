@@ -1,0 +1,13 @@
+package method;
+
+public class CalculatorApp {
+
+	public static void main(String[] args) {
+		Calculator calc = new Calculator();
+		int result = calc.add(4,5);
+		
+		// System은 클래스 out은 static 변수이다.
+		System.out.println(result);
+	}//main() end
+
+}//CalculatorApp end

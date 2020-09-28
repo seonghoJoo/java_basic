@@ -1,0 +1,18 @@
+package control;
+
+import java.util.Scanner;
+
+public class BreakEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		long l = 0;
+		
+		for(long i=0;i<10000000000L;i++) {
+			l+=1;
+		}//for end
+		System.out.println(l);
+	}//main() end
+	
+}//WhileEx3 end

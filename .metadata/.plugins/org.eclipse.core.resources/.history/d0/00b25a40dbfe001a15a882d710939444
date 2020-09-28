@@ -1,0 +1,37 @@
+package equal;
+// 객체 항등이라는 것이 뭐냐?
+class A{
+	int a;
+	public A(int a) {
+		this.a = a;
+	}// A(int a) end
+}// A end
+
+
+public class Ex1 {
+	
+	public static void main(String[] args) {
+		// 객체의 항등이란 레퍼런스 비교 .(점 비교)
+		A a = new A(1);
+		A b = new A(1);
+		// a == b false
+		
+		a = b; // a == b true
+		
+		b = null; // a == b false
+		
+		//System.out.println(a==b);
+		/*
+		  	모든 객체에는 equals 메서드가 있음
+		 */
+		String str1="A";
+		String str2="A";
+		System.out.println(str1==str2);
+		System.out.println(str1.equals(str2));
+		
+		
+		
+	}// main() end
+	
+	
+}// Ex1 end

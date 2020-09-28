@@ -1,0 +1,35 @@
+package string;
+
+public class Ex1 {
+	public static void main(String[] args) {
+		
+		/*
+		  		String의 주요 메서드
+		  		-  charAt(인덱스) : 해당 인덱스의 문자(char 형) 하나를 리턴하는 메서드
+		  		-  concat(문자열)
+				-  contains("문자열") : true or false
+				-  indexOf()
+		 */
+		String s = "ABCDEFGHIJ";
+		
+		char c = s.charAt(2);
+		System.out.println("c : "+c);
+		
+		//s += "CD";
+		String temp = s.concat("CD");
+		System.out.println("temp : "+temp);
+		System.out.println("s : " + s);
+		
+		System.out.println(s.contains("BCD"));	//true false
+		
+		/*
+		  		- indexOf(문자); charAt의 반대 return int index
+		  		- indexOf(문자열); charAt의 반대 return int index
+		 */
+		String str = "가나다라마바사";
+		int indexChar = str.indexOf('가');
+		int indexStr = str.indexOf("다라");
+		System.out.println("indexChar : " + indexChar + " indexStr : " + indexStr);
+		
+	}//main() end
+}//Ex1 end

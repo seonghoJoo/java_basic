@@ -1,0 +1,20 @@
+package secret;
+
+import java.util.Scanner;
+
+public class Ex1 {
+	
+	public static void main(String[] args) {
+		String s = "hello java";
+		System.out.println(s);
+		
+	}//main() end
+	/*
+	 		개발자들이 편리하게 하기 위하여
+	 		기본 개념에서 생략되는 것들이 상당히 많이 존재합니다.
+	 		
+	 		이를 '자바의 숨겨진 비밀' 이라고 칭함
+	 		
+	 		
+	 * */
+}

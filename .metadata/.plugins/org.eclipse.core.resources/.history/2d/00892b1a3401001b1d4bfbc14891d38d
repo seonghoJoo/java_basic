@@ -1,0 +1,21 @@
+package array;
+
+public class Ex3 {
+	public static void main(String[] args) {
+		
+		String[] names = {"RM", "뷔",
+				"슈가","진","제이홉","정국","지민"
+				};
+		
+		String[] names1 = new String[7];
+		names1[0] = "RM";
+		names1[1] = "쀠";
+		
+		// for문과 배열과의 궁합은 매우 훌륭함
+		for(String name : names) {
+			System.out.println(name);
+		}
+		
+	}//main() end
+	
+}//Ex3 end

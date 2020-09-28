@@ -1,0 +1,16 @@
+package constructor;
+
+public class Book {
+	
+	
+	public Book(Book b) {
+		System.out.println('★');
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Book book = new Book();
+		Book book = new Book(book);
+	}
+}

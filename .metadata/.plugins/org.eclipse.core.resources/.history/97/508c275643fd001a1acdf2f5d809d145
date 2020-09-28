@@ -1,0 +1,6 @@
+package oop;
+
+public class A {
+	int a;
+	static int b;
+}

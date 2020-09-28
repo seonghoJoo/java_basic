@@ -1,0 +1,23 @@
+package string;
+
+import java.util.Scanner;
+
+public class Ex3 {
+
+	public static void main(String[] args) {
+
+		System.out.println("당신의 이멜 입력~");
+		
+		// 입력받음 
+		// kimpilgu@gmail.com
+		// blazebottle@naver.com
+		Scanner sc = new Scanner(System.in);
+		
+		// 이메일중 아이디만 추출하여 출력
+		String str = sc.nextLine();
+		
+		String []s = str.split("@");
+		System.out.println("당신의 아이디는 "+s[0] + "입니다.");
+	}
+
+}

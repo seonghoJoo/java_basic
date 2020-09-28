@@ -1,0 +1,27 @@
+package access;
+
+public class Ex1 {
+	
+	/*
+	 		접근제한자(access modifier)
+	 		
+	 		-   public : 어디서든 접근 가능
+	 			
+	 			
+	 		-   protected : 같은 패키지와 상속관계일때만 접근 가능
+	 		
+	 		
+	 		-   (defualt) : 같은 패키지 내부에서만 
+	 		
+	 		
+	 		-   private : 같은 클래스 내부에서만 접근가능 
+	 * */
+	
+	
+	public static void main(String[] args) {
+		
+		int a;
+		
+		
+	}//main() end
+}//Ex end

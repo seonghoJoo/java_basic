@@ -1,0 +1,13 @@
+package oop;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		A.b = 100;
+		A a = new A();
+		a.a = 100;
+		System.out.println(a.b);
+	}
+
+}
