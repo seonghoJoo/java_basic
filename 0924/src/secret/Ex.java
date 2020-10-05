@@ -13,6 +13,8 @@ public class Ex {
 	void test() {
 		// this. 생략 가능 
 		this.b = 10;
+		a = 12;
+		Ex.a = 13;
 		/*
 	  		3)  같은 클래스 내부에서
 	  			인스턴스 멤버들끼리 접근시
@@ -44,6 +46,7 @@ public class Ex {
 				   Ex.a = 5; or a = 5;
 		 */
 		
+		//
 		System.out.println(e.b);
 	}
 }

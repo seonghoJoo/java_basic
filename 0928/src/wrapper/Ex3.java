@@ -19,6 +19,7 @@ public class Ex3 {
 		
 		// 오토박싱 객체로 감싸버려
 		Integer i = 3;
+		
 		Integer i2 = 3;
 		Integer i3 = new Integer(3);
 		

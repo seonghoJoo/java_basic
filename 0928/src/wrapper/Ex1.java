@@ -19,9 +19,10 @@ public class Ex1 {
 		  		-  생성자(기본자료형 or String)
 		 */
 		Integer i = new Integer(3);
-		
+		int a = 3;
+		Integer i2 = new Integer(1);
 		//parseInt 해서 
-		Integer i2 = new Integer("3");
+		Integer i3 = new Integer("3");
 		
 		// A를 숫자로 형변환 할 수 없으니깐 
 		// NumberFormatException 발생함
@@ -34,10 +35,10 @@ public class Ex1 {
 		// Integer 은 java.lang 패키지 안에 있기 때문에 생략가능
 		// Integer 클래스 안에 있는 parseInt라는 멤버 메서드
 		// 인자는 1개 리턴값은 int이다.
-		int a = Integer.parseInt("12333");
+		int a1 = Integer.parseInt("12333");
 		long max = Long.MAX_VALUE;
 		
-		System.out.println(a);
+		System.out.println(a1);
 		System.out.println(max);
 		
 		Double d = new Double("3.123456789");
