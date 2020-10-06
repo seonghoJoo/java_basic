@@ -4,41 +4,35 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-	static int cnt=0;
-	static int rLimit=0;
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		int n = sc.nextInt();
-		rLimit = sc.nextInt();
-		int[] arr = new int[n];
-		boolean[] temp = new boolean[n];
-		for(int i=0;i<arr.length;i++) {
-			arr[i] = i+1;
+		int v = sc.nextInt();
+		int e = sc.nextInt();
+		int[][] arr = new int[v+1][v+1];
+		for(int i=0;i<e;i++) {
+			int from = sc.nextInt();
+			int to = sc.nextInt();
+			int val = sc.nextInt();
+			arr[from][to] = val;
 		}
-		dfs(0,0,arr,temp);
-		System.out.println(cnt);
-	}//main() end
-	public static void dfs(int level,int r,int[] arr,boolean[] temp) {
-		if(r==rLimit) {
-			for(int i=0;i<arr.length;i++) {
-				if(temp[i] == true) {
-					System.out.print(arr[i]+" ");
-				}
+		for(int i=1;i<=v;i++) {
+			for(int j=1;j<=v;j++) {
+				System.out.print(arr[i][j] + " ");
 			}
 			System.out.println();
-			cnt++;
-			return;
-		}else if(level == arr.length) {
-			return;
 		}
-		else {
-			
-				temp[level] = true;
-				dfs(level+1,r+1,arr,temp);
-				temp[level] = false;
-				dfs(level+1,r,arr,temp);
-			
+		
+	}//main() end
+	public static class V{
+		int from;
+		int to;
+		int val;
+		
+		V(int from,int to,int val){
+			this.from = from;
+			this.to = to;
+			this.val = val;
 		}
 	}
 	
