@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="idols">
+<!-- 여기에 SQL 구문을 작성 -->
+		<select id="searchList" resultType="Idol" >
+			SELECT	idol_id idolId,
+					i.name name,
+					height,
+					weight,
+					birth_date birthDate,
+					gender,
+					i.group_id groupId,
+					g.name groupName
+			FROM idols i, groups g
+			WHERE i.group_id = g.group_id
+			ORDER BY 1
+		</select>
+		
+		<update id="updateById" parameterType="Idol">
+			UPDATE idols
+			SET name = #{name}
+			WHERE idol_id = #{idolId}
+
+		</update>
+</mapper>

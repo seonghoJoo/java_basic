@@ -12,7 +12,7 @@ public class A {
 		// 자바 2번비밀 같은 클래스 내에서 static 멤버 메서드 내에서 static 멤버 필드 접근시 클래스명. 생략가능
 		
 		int b = new A().test(20);
-		a = b;
+		//a = b;
 		return b;
 	}
 	public static void main(String[] args) {
