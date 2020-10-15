@@ -14,15 +14,17 @@ public abstract class Animal {
 	  		-	선언:
 	  			접근제한자 abstract class 클래스명
 	  		-	일반클래스처럼 생성자도 가지고 일반메서드도 가질 수 있고, 멤버필드도 가질 수 있음
-	  		-	단, new 생성자 호출로 객체생성 불가
+	  		-	단, new 생성자 호출로 인스턴스생성 불가
 	  		
 	  		추상메서드
 	  		
 	  		-	본체(body)가 없는 메서드
 			-	호출은 가능하지만 내용이 없음
 	  		-	선언: 
-	  			접근제한자 abstract (static) 리턴자료형 메서드명(인자)
-	 */
+	  			접근제한자 abstract (static) 리턴자료형 메서드명(인자);
+	  			
+	  		-	추상 메서드를 가진
+	 * 추상클래스를 */
 	public void eat() {
 		System.out.println("밥먹는중");
 	}
