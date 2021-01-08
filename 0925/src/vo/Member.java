@@ -37,9 +37,6 @@ public class Member {
 		this.major = major;
 	}
 	
-	
-	
-	
 	public String getName() {
 		return name;
 	}

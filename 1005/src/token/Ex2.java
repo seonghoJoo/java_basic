@@ -1,3 +1,4 @@
+
 package token;
 
 import java.util.*;
@@ -11,7 +12,7 @@ public class Ex2 {
 		 		- nextToken() : 현재 토큰을 반환하면서 커서가 이동
 		 **/
 		
-		StringTokenizer stok = new StringTokenizer("테넷,,,위플래시,라라랜드,인셉션," , ",");
+		StringTokenizer stok = new StringTokenizer("서울시 동작구 사당로 13길 31" , " ");
 		while(stok.hasMoreTokens()) {
 			String movie = stok.nextToken();
 			System.out.println(movie + " " + stok.nextToken());

@@ -3,10 +3,8 @@ package method;
 public class Calculator {
 	
 	/*
-	 	
 	 	멤버필드의 선언은 
 	 	접근제한자 (static) 자료형 이름;
-	 	
 	 */
 	/*
 	 	(멤버) 메서드의 선언

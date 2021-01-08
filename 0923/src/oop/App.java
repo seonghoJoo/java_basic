@@ -29,7 +29,7 @@ public class App {
 		 */
 		/*
 		  		자바의 숨겨진 비밀
-		  		멤버에 접근할때는 instance 객체의 레퍼런스 . ㅇ,로 
+		  		멤버에 접근할때는 instance 객체의 레퍼런스로 
 		 */
 		//App.a = 10;
 		

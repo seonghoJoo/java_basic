@@ -10,9 +10,7 @@ public class OperatorEx5 {
 		 * 		논리합 : ||
 		 * 		논리값이 있어야 함
 		 * 
-		 
 		 */
-		
 	
 	}//main() end
 
